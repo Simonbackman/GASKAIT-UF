@@ -5,11 +5,9 @@
 }
 html, body{
     height: 100%;
-        
 }
-
-section{
-    min-height: 100%;
+article{
+    min-height: 100%;   
 }
 article{
     height: 50em;
@@ -120,13 +118,83 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* OmOss.php */
+                /*Priser.php*/
 
-/*
-#about{
-    display: flex;   
-}
-*/
+         .main { 
+            justify-content: center;
+         }
+         .price_div{
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+            margin-top: 10em;
+            text-align: center;
+        }
+         .box1{
+            height: 21em;
+            width: 16em;
+            background-color: #d4d4d4;
+            box-shadow: 5px 10px #000000;
+            margin: 1em;
+            border-radius: 1em;
+        }
+         .box2{
+            height: 21em;
+            width: 16em;
+            background-color: #d4d4d4;
+            box-shadow: 5px 10px #000000;
+            margin: 1em;
+            border-radius: 1em;
+        }
+         .box3{
+            height: 21em;
+            width: 16em;
+            background-color: #d4d4d4;
+            box-shadow: 5px 10px #000000;
+            margin: 1em;
+            border-radius: 1em;
+        }
+
+        @media only screen and (max-width: 860px) {
+            .price_div    {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .package_name{
+
+        }
+        .price_btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 1em;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px green;
+            margin-top: 4em;
+        }
+        .package_ul{
+            list-style-type: none; 
+        }
+
+         .price_btn:hover {
+              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        .package_ul > li{
+            padding: 4px 10px;
+        }
+
+
+/* OmOss.php*/
+
 #OmOss_div{
     border: 1px solid red;
     margin: 1%;
