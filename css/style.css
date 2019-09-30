@@ -7,11 +7,11 @@ html, body{
     height: 100%;
 }
 article{
-    min-height: 100%;   
-}
-article{
-    height: 50em;
-    background-color: #d9d9d9;
+    min-height: 100%;
+    height: auto;
+/*    height: 50em;*/
+/*    background-color: #d9d9d9;*/
+    background-color: #676765;
     display: flex;
 }
 nav {
@@ -19,25 +19,22 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5D4954;
+/*  background-color: #5D4954;*/
+    background-color: #393936;
 }
-
 .logo {
     color: rgb(226, 226, 226);
     text-transform: uppercase;
     font-size: 20px;
 }
-
 .nav-links {
     display: flex;
     justify-content: space-around;
     width: 35%;
 }
-
 .nav-links li {
     list-style: none;
 }
-
 .nav-links a {
     color: rgb(226, 266, 266);
     text-decoration: none;
@@ -45,11 +42,9 @@ nav {
     font-weight: bold;
     font-size: 14px;
 }
-
 .burger {
     display: none;
 }
-
 .burger div {
     width: 25px;
     height: 3px;
@@ -63,7 +58,6 @@ nav {
     .nav-links {
         width: 50%;
     }
-
 }
 /* Mobile */
 @media screen and (max-width:768px) {
@@ -109,95 +103,93 @@ nav {
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
-
 .toggle .line2 {
     opacity: 0;
 }
-
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
                 /*Priser.php*/
+.main { 
+    justify-content: center;
+}
+.price_div{
+    display: flex;
+    flex-direction: row;         
+    justify-content: center;
+    margin-top: 5em;
+    text-align: center;
+}
+.box1{
+    height: 21em;
+    width: 16em;
+    background-color: #d4d4d4;
+    box-shadow: 0px 5px 10px #000000;
+    margin: 1em;
+    border-radius: 1em;
+}
+.box2{
+    height: 21em;
+    width: 16em;
+    background-color: #d4d4d4;
+    box-shadow: 0px 5px 10px #000000;
+    margin: 1em;
+    border-radius: 1em;
+}
+.box3{
+    height: 21em;
+    width: 16em;
+    background-color: #d4d4d4;
+    box-shadow: 0px 5px 10px #000000;
+    margin: 1em;
+    border-radius: 1em;
+}
 
-         .main { 
-            justify-content: center;
-         }
-         .price_div{
-            display: flex;
-            flex-direction: row; 
-            justify-content: center;
-            margin-top: 10em;
-            text-align: center;
-        }
-         .box1{
-            height: 21em;
-            width: 16em;
-            background-color: #d4d4d4;
-            box-shadow: 5px 10px #000000;
-            margin: 1em;
-            border-radius: 1em;
-        }
-         .box2{
-            height: 21em;
-            width: 16em;
-            background-color: #d4d4d4;
-            box-shadow: 5px 10px #000000;
-            margin: 1em;
-            border-radius: 1em;
-        }
-         .box3{
-            height: 21em;
-            width: 16em;
-            background-color: #d4d4d4;
-            box-shadow: 5px 10px #000000;
-            margin: 1em;
-            border-radius: 1em;
-        }
+@media only screen and (max-width: 860px) {
+    .price_div    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.package_name{
+ 
+}
+.price_btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 1em;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px green;
+    margin-top: 4em;
+}
+.package_ul{
+    list-style-type: none; 
+}
 
-        @media only screen and (max-width: 860px) {
-            .price_div    {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+.price_btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
-        .package_name{
-
-        }
-        .price_btn {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 1em;
-            cursor: pointer;
-            box-shadow: 0px 0px 5px green;
-            margin-top: 4em;
-        }
-        .package_ul{
-            list-style-type: none; 
-        }
-
-         .price_btn:hover {
-              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-        }
-
-        .package_ul > li{
-            padding: 4px 10px;
-        }
-
+.package_ul > li{
+    padding: 4px 10px;
+}
 
 /* OmOss.php*/
 
 #OmOss_div{
     border: 1px solid red;
     margin: 1%;
+}
+.OmOss, p a{
+    color:inherit;
 }
 
 #members{
@@ -242,7 +234,7 @@ footer .footer-content .footer-section{
     padding: 25px;
 }
 .footer .footer-content, h3{
-    color: white;
+    color: #dedddd;
 }
 .footer .footer-content .about .contact, p{
     display: block;
@@ -290,9 +282,9 @@ footer .footer-content .footer-section{
     border-radius: 20px;
 }
 .text-input:focus, .contact-input:focus {
-    background: #121212;    
+    background: #121212; 
+    outline: none !important;
 }
-
 .btn{
     padding: .7rem 1.3rem;    
     line-height: 1.3rem;
@@ -321,12 +313,12 @@ footer .footer-bottom{
     footer {
     height: auto;
     position: relative;
-}
-footer .footer-content{
-    height: auto;
-    flex-direction: column;
-    padding-bottom: 90px;
-}
+    }
+    footer .footer-content{
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 90px;
+    }
     .btn{
         width: 100%;
     }
