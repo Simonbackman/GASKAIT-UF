@@ -29,8 +29,18 @@
                         <li>test &#x2612;</li>
                     </ul>
                 </div>
-                <a href="" class="price_btn">test</a> <!-- leder till köp sidan eller ett köp popup fönstret -->
+                <button id="price_btn1">test</button>
+                    <!-- popup -->
+                <div id="popup1" class="modal">
+                      <!-- poup content -->
+                      <div class="popup1-content">
+                        <span class="close">&times;</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque doloremque error veniam repellendus, hic ducimus modi sapiente nulla soluta quaerat excepturi deleniti explicabo illum voluptate dignissimos quae! Temporibus quibusdam, odit doloribus expedita porro quasi! Nemo aut molestiae quae, ab perspiciatis sint optio fugit similique distinctio ex, dolorem atque, autem quasi. </p>
+                      </div>
+                </div> 
             </div>
+                
+            
             <div class="box2">
                 <h1 class="package_name">box 2</h1>
                 <div class="package_price">
@@ -45,8 +55,18 @@
                         <li>test </li>
                     </ul>
                 </div>
-                <a href="" class="price_btn">test</a> <!-- leder till köp sidan eller ett köp popup fönstret -->
+                <button id="price_btn2">test</button> 
+                <!-- popup -->
+                <div id="popup2" class="modal">
+                      <!-- popup content -->
+                      <div class="popup1-content">
+                        <span class="close">&times;</span>
+                        <p>Some text </p>
+                      </div>
+                </div>
             </div>
+              
+            
             <div class="box3">
                 <h1 class="package_name">box 3</h1>
                 <div class="package_price">
@@ -61,10 +81,49 @@
                         <li>test &#x2612;</li>
                     </ul>
                 </div>
-                <a href="" class="price_btn">test</a> <!-- leder till köp sidan eller ett köp popup fönstret -->
+                 <button id="price_btn2">test</button> 
+                 <!-- popup -->
+                <div id="popup3" class="modal">
+                      <!-- popup content -->
+                      <div class="popup1-content">
+                        <span class="close">&times;</span>
+                        <p>Some text </p>
+                      </div>
+                </div>
             </div>
         </div>
+        
+
+    
+        <script>
+// Get the modal
+const popup1 = document.getElementById("popup1");
+
+// Get the button that opens the popup
+const btn = document.getElementById("price_btn1");
+
+// Get the <span> element that closes the popup
+const span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the popup 
+btn.onclick = function() {
+  popup1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the popup
+span.onclick = function() {
+  popup1.style.display = "none";
+}
+// When the user clicks anywhere outside of the popup, close it
+window.onclick = function(event) {
+  if (event.target == popup1) {
+    popup1.style.display = "none";
+  }
+}
+</script>
+       
     </article>
     <?php include('templates/footer.php'); ?>
+    
 </body>
 </html>
