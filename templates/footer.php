@@ -43,7 +43,8 @@
             <div class="footer-section contact-form">
                 <h3>Contact us</h3>
                 <br/>
-                <form action="" method="post">
+                <form action="index.php" method="POST">
+                    <input type="name" name="name" class="text-input" placeholder="Your name..."><br/>
                     <input type="email" name="email" class="text-input" placeholder="Your email address..."><br/>
                     <textarea name="message" class="text-input contact-input" placeholder="your message..."></textarea><br/>
                     <button type="submit" class="btn"><i class="fas fa-envelope"></i> Send</button>
@@ -53,7 +54,7 @@
 
 
         <div class="footer-bottom">
-            &copy; test.com
+            &copy; gaskait-uf.com
         </div>
 
     </footer>

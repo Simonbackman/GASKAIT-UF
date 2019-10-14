@@ -9,8 +9,7 @@ html, body{
 article{
     min-height: 100%;
     height: auto;
-/*    height: 50em;*/
-/*    background-color: #d9d9d9;*/
+/*  background-color: #d9d9d9;*/
     background-color: #676765;
     display: flex;
 }
@@ -22,10 +21,12 @@ nav {
 /*  background-color: #5D4954;*/
     background-color: #393936;
 }
+/*Företagsnamnet som ligger i menyn/nav */
 .logo {
     color: rgb(226, 226, 226);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 35px;
+    font-family:monospace;
 }
 .nav-links {
     display: flex;
@@ -53,13 +54,13 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* Tablet  */
+    /* Tablet for size of nav-links  */
 @media screen and (max-width:1024px) {
     .nav-links {
         width: 50%;
     }
 }
-/* Mobile */
+    /* Mobile for nav links/burger */
 @media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
@@ -69,7 +70,8 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #5D4954;
+        background-color: #393936;
+/*      background-color: #5D4954;*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -88,18 +90,19 @@ nav {
 .nav-active {
     transform: translateX(0%);
 }
-@keyframes navLinkFade {
+
+/*  Don't work right now trying to fix | (ska göra så att texten glider in istället för redan finnas där nav texten för mobiler)  */
+@keyframes navLinkFade{
     from {
         opacity: 0;
         transform: translateX(50px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
-
+/*styr utsendet på burger iconen*/
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -110,10 +113,12 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-                /*Priser.php*/
+        /*Priser.php*/
 .main { 
     justify-content: center;
 }
+
+/*Styr utsendet på pris containerna samt innhållet*/
 .price_div{
     display: flex;
     flex-direction: row;         
@@ -145,7 +150,7 @@ nav {
     margin: 1em;
     border-radius: 1em;
 }
-
+/*Gör så att containerna blir under varandra i mitten för mobiler*/
 @media only screen and (max-width: 860px) {
     .price_div    {
         flex-direction: column;
@@ -173,16 +178,15 @@ nav {
 .package_ul{
     list-style-type: none; 
 }
-
+/*Gör skuggan runt knappen i price divsen*/
 .price_btn:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
 .package_ul > li{
     padding: 4px 10px;
 }
 
-/* OmOss.php*/
+        /* OmOss.php*/
 
 #OmOss_div{
     border: 1px solid red;
@@ -191,7 +195,6 @@ nav {
 .OmOss, p a{
     color:inherit;
 }
-
 #members{
     display: flex;
     flex-direction: column;
@@ -213,13 +216,11 @@ nav {
     margin: auto;
 }
 
-
-
         /*templates/footer.php*/
 footer {
     background: #393936;
     color: #d3d3d3;
-    height: 400px;
+    height: 420px;
     position: relative;
 }
 footer h3{
@@ -271,7 +272,7 @@ footer .footer-content .footer-section{
     margin-left: 15px;
     transition: all .4s;
 }
-
+/* Styr utsendet på footer/contact form */
 .contact-form .text-input, .contact-input{
     background: #272727;
     color: #bebdbd;
@@ -281,15 +282,16 @@ footer .footer-content .footer-section{
     width: 100%;
     border-radius: 20px;
 }
+/*Styr utsendet på text area i footer/contact form */
 .text-input:focus, .contact-input:focus {
     background: #121212; 
     outline: none !important;
 }
+/* Styr utsendet på send knappen i footer/contact form */
 .btn{
     padding: .7rem 1.3rem;    
     line-height: 1.3rem;
     background: #006669;
-    color: white;
     border:1px solid transparent;
     border-radius: .25rem;
     float: right;
@@ -308,7 +310,9 @@ footer .footer-bottom{
     bottom: 0px;
     left: 0px;
     padding-top: 20px;
+    color: #eae8e8;
 }
+/*Styr utsendet i footer i mobil läge */
 @media only screen and (max-width: 934px){
     footer {
     height: auto;

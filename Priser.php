@@ -29,7 +29,7 @@
                         <li>test &#x2612;</li>
                     </ul>
                 </div>
-                <a href="" class="price_btn">test</a>
+                <a href="" class="price_btn">test</a> <!-- leder till köp sidan eller ett köp popup fönstret -->
             </div>
             <div class="box2">
                 <h1 class="package_name">box 2</h1>
@@ -45,7 +45,7 @@
                         <li>test </li>
                     </ul>
                 </div>
-                <a href="" class="price_btn">test</a>
+                <a href="" class="price_btn">test</a> <!-- leder till köp sidan eller ett köp popup fönstret -->
             </div>
             <div class="box3">
                 <h1 class="package_name">box 3</h1>
@@ -61,10 +61,9 @@
                         <li>test &#x2612;</li>
                     </ul>
                 </div>
-                <a href="" class="price_btn">test</a>
+                <a href="" class="price_btn">test</a> <!-- leder till köp sidan eller ett köp popup fönstret -->
             </div>
         </div>
-    
     </article>
     <?php include('templates/footer.php'); ?>
 </body>
