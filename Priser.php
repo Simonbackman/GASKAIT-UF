@@ -59,7 +59,7 @@
                 <!-- popup -->
                 <div id="popup2" class="modal">
                       <!-- popup content -->
-                      <div class="popup1-content">
+                      <div class="popup2-content">
                         <span class="close">&times;</span>
                         <p>Some text </p>
                       </div>
@@ -81,7 +81,7 @@
                         <li>test &#x2612;</li>
                     </ul>
                 </div>
-                 <button id="price_btn2">test</button> 
+                 <button id="price_btn3">test</button> 
                  <!-- popup -->
                 <div id="popup3" class="modal">
                       <!-- popup content -->
@@ -97,13 +97,13 @@
     
         <script>
 // Get the modal
-const popup1 = document.getElementById("popup1");
+var popup1 = document.getElementById("popup1");
 
 // Get the button that opens the popup
-const btn = document.getElementById("price_btn1");
+var btn = document.getElementById("price_btn1");
 
 // Get the <span> element that closes the popup
-const span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the popup 
 btn.onclick = function() {
@@ -120,8 +120,7 @@ window.onclick = function(event) {
     popup1.style.display = "none";
   }
 }
-</script>
-       
+</script>       
     </article>
     <?php include('templates/footer.php'); ?>
     
