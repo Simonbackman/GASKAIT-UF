@@ -1,6 +1,7 @@
 <nav>
         <div class="logo">
-            <h4>GASKAIT-UF</h4>
+<!--            <h4>GASKAIT-UF</h4>-->
+           <img class="nav-logo" src="image/gaskalogo.png" alt="logo">
         </div>
         <ul class="nav-links">
             <li><a href="index.php">

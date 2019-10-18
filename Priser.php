@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>GASKA IT</title>
+    
+<!--    <link rel="shortcut icon" href="">-->
+    
     <script src="javascript/js.js" async></script>
 </head>
 <body>
@@ -59,8 +62,8 @@
                 <!-- popup -->
                 <div id="popup2" class="modal">
                       <!-- popup content -->
-                      <div class="popup2-content">
-                        <span class="close">&times;</span>
+                      <div class="popup1-content">
+                        <span class="close2">&times;</span>
                         <p>Some text </p>
                       </div>
                 </div>
@@ -86,7 +89,7 @@
                 <div id="popup3" class="modal">
                       <!-- popup content -->
                       <div class="popup1-content">
-                        <span class="close">&times;</span>
+                        <span class="close3">&times;</span>
                         <p>Some text </p>
                       </div>
                 </div>
@@ -96,30 +99,7 @@
 
     
         <script>
-// Get the modal
-var popup1 = document.getElementById("popup1");
 
-// Get the button that opens the popup
-var btn = document.getElementById("price_btn1");
-
-// Get the <span> element that closes the popup
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the popup 
-btn.onclick = function() {
-  popup1.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the popup
-span.onclick = function() {
-  popup1.style.display = "none";
-}
-// When the user clicks anywhere outside of the popup, close it
-window.onclick = function(event) {
-  if (event.target == popup1) {
-    popup1.style.display = "none";
-  }
-}
 </script>       
     </article>
     <?php include('templates/footer.php'); ?>

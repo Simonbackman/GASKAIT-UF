@@ -21,6 +21,10 @@ nav {
 /*  background-color: #5D4954;*/
     background-color: #393936;
 }
+
+.nav-logo{
+    width: 7em;
+}
 /*Företagsnamnet som ligger i menyn/nav */
 .logo {
     color: rgb(226, 226, 226);
@@ -245,7 +249,6 @@ nav {
     width: 80%;
     height: 50em;      
 }
-
 /* The Close Button */
 .close {
     color: red;
@@ -261,7 +264,32 @@ nav {
     cursor: pointer;
 }
 
+.close2 {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold; 
+}
 
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close3 {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold; 
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
         /* OmOss.php*/
