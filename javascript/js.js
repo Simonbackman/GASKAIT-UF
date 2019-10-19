@@ -39,11 +39,11 @@ span.onclick = function() {
   popup1.style.display = "none";
 }
 // When the user clicks anywhere outside of the popup, close it
-window.onclick = function(event) {
-  if (event.target == popup1) {
-    popup1.style.display = "none";
+window.addEventListener("click", function(event){
+    if (event.target == popup1) {
+   popup1.style.display = "none";
   }
-}
+});
 
 // modal2
 var popup2 = document.getElementById("popup2");
@@ -64,11 +64,12 @@ span2.onclick = function() {
   popup2.style.display = "none";
 }
 // When the user clicks anywhere outside of the popup, close it
-window.onclick = function(event) {
-  if (event.target == popup2) {
-    popup2.style.display = "none";
+
+window.addEventListener("click", function(event){
+    if (event.target == popup2) {
+   popup2.style.display = "none";
   }
-}
+});
 
 //  modal3
 var popup3 = document.getElementById("popup3");
@@ -88,8 +89,8 @@ span3.onclick = function() {
   popup3.style.display = "none";
 }
 // When the user clicks anywhere outside of the popup, close it
-window.onclick = function(event) {
-  if (event.target == popup3) {
-    popup3.style.display = "none";
+window.addEventListener("click", function(event){
+    if (event.target == popup3) {
+   popup3.style.display = "none";
   }
-}
+});
