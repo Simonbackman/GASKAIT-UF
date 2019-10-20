@@ -18,7 +18,7 @@
    <article id="about">
         <div id="OmOss_div">
             <p>
-               Vi är tre ambitiösa gymnasieelever från NTI Gymnasiet kronhus vi går IT linjen med inriktningarna Webbutveckling och Nätverk. Vi har fått i uppdrag att skapa ett UF företag inom IT så vi har skapat detta företag som specialiserar sig i både skapande av hemsidor och support. Har du några frågor eller om du skulle vara intresserad i vår tjänst så är det bara att maila <a href="mailto:support@gaskait.com">support@gaskait.com</a> eller om du behöver hjälp eller har några mer frågor om företaget så är det bara att ringa supporten på 0734 33 58 12 lorem90
+               Vi är tre ambitiösa gymnasieelever från NTI Gymnasiet kronhus vi går IT linjen med inriktningarna Webbutveckling och Nätverk. Vi har fått i uppdrag att skapa ett UF företag inom IT så vi har skapat detta företag som specialiserar sig i både skapande av hemsidor och support. Har du några frågor eller om du skulle vara intresserad i vår tjänst så är det bara att maila <a href="mailto:support@gaskait.com">support@gaskait.com</a> eller om du behöver hjälp eller har några mer frågor om företaget så är det bara att ringa supporten på 0734 33 58 12
             </p>  
         </div>
         

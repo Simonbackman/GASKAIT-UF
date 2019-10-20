@@ -3,14 +3,110 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root[data-theme='light']{
+    --main-bg-color: #ebebeb;             /* main bg-color on the pages */
+    --main-nav-bg-color: #e0dada;         /* bg-color on the nav/meny */
+    --main-nav-burger-color: #333333;     /* burger color in the nav/meny (for phones) */
+    --main-nav-link-color:#333333;
+
+
+    --footer-info-txt-color:#;
+    --footer-h3-color: #;
+    --footer-link-txt-color: #;
+    --footer-fab-color:#000000;
+
+    --price-box-div-bg-color: #;    /* bg color on the price divs popups */
+    --price-btn-color: #;           /* color on the price buttons */
+    --price-btn-shadow-color:#;     /* shadow colors for the price buttons  */
+    --modal-popup-window-bgColor-behind-popup:#00000066; 
+    --modal-popup-bg-color:#;
+}
+
+:root /* [data-thema="dark"] */ {  /*Dark theme colors if we make color switch*/
+    --main-bg-color: #676765;             /* main bg-color on the pages */
+    --main-nav-bg-color: #393936;         /* bg-color on the nav/meny */
+    --main-nav-burger-color: #e2e2e2;     /* burger color in the nav/meny (for phones) */
+    --main-nav-link-color:#E2FFFF;
+    
+    --main-link-hover-color:#808080;
+
+    --footer-info-txt-color:#d3d3d3;
+    --footer-h3-color: #dedddd;
+    --footer-link-txt-color: #ffffff;
+    --footer-fab-color:#ffffff;
+
+    --footer-contact-input-bg-color:#272727;
+    --footer-contact-input-color:#bebdbd;
+    
+    --price-box-div-bg-color: #d4d4d4;    /* bg color on the price divs popups */
+    --price-btn-color: #4CAF50;           /* color on the price buttons */
+    --price-btn-shadow-color:#008000;     /* shadow colors for the price buttons  */
+    --modal-popup-window-bgColor-behind-popup:#00000066; 
+    --modal-popup-bg-color:#d8d8d8;
+    
+    --omOss-page-txt-color:#ffffff;
+    --omOss-memb-rubrik-color:#f1f0f0;
+    --omOss-memb-desc-color:#e7e7e7;
+    
+}                                          
 html, body{
     height: 100%;
 }
+/* Light/Dark mode switch button  */
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Light";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Dark";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
 article{
     min-height: 100%;
     height: auto;
-/*  background-color: #d9d9d9;*/
-    background-color: #676765;
+     /* background-color: #d9d9d9; */
+
+    /* background-color: #676765; *//* Same color without using css var*/
+    background-color: var(--main-bg-color);
     display: flex;
 }
 nav {
@@ -18,34 +114,45 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-/*  background-color: #5D4954;*/
-    background-color: #393936;
+    /* background-color: #393936; */ /* Same color without using css var*/
+    background-color: var(--main-nav-bg-color);
 }
 
 .nav-logo{
     width: 7em;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 /*Företagsnamnet som ligger i menyn/nav */
 .logo {
-    color: rgb(226, 226, 226);
-    text-transform: uppercase;
     font-size: 35px;
-    font-family:monospace;
 }
 .nav-links {
     display: flex;
     justify-content: space-around;
     width: 35%;
+    
 }
 .nav-links li {
     list-style: none;
 }
+
 .nav-links a {
-    color: rgb(226, 266, 266);
+    /* color:#E2FFFF; */
+    color:var(--main-nav-link-color);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
+}
+.nav-links a:hover{
+    /* color: #808080; */
+    color:var(--main-link-hover-color);
+    transition: all .4s;
 }
 .burger {
     display: none;
@@ -53,11 +160,11 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    /* background-color: #e2e2e2; */
+    background-color: var(--main-nav-burger-color);
     margin: 5px;
     transition: all 0.3s ease;
 }
-
     /* Tablet for size of nav-links  */
 @media screen and (max-width:1024px) {
     .nav-links {
@@ -74,8 +181,8 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #393936;
-/*      background-color: #5D4954;*/
+        /* background-color: #393936; */
+        background-color: var(--main-nav-bg-color);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -120,6 +227,7 @@ nav {
         /*Priser.php*/
 .main { 
     justify-content: center;
+    padding: 0.4%;
 }
 
 /*Styr utsendet på pris containerna samt innhållet*/
@@ -129,12 +237,14 @@ nav {
     justify-content: center;
     margin-top: 5em;
     text-align: center;
+    overflow: hidden;
 }
 .box1{
     padding-top: 2em;
     height: 30em;
-    width: 20em;
-    background-color: #d4d4d4;
+    width: 18em;
+    /* background-color: #d4d4d4; */
+    background-color: var(--price-box-div-bg-color);
     box-shadow: 0px 5px 10px #000000;
     margin: 1em;
     border-radius: 1em;
@@ -143,8 +253,9 @@ nav {
 .box2{
     padding-top: 2em;
     height: 30em;
-    width: 20em;
-    background-color: #d4d4d4;
+    width: 18em;
+    /* background-color: #d4d4d4; */
+    background-color: var(--price-box-div-bg-color);
     box-shadow: 0px 5px 10px #000000;
     margin: 1em;
     border-radius: 1em;
@@ -152,8 +263,9 @@ nav {
 .box3{
     padding-top: 2em;
     height: 30em;
-    width: 20em;
-    background-color: #d4d4d4;
+    width: 18em;
+    /* background-color: #d4d4d4; */
+    background-color: var(--price-box-div-bg-color);
     box-shadow: 0px 5px 10px #000000;
     margin: 1em;
     border-radius: 1em;
@@ -164,7 +276,7 @@ nav {
 /*Gör så att containerna blir under varandra i mitten för mobiler*/
 @media only screen and (max-width: 860px) {
     .price_div    {
-        flex-direction: column;
+        flex-direction: column;    
         justify-content: center;
         align-items: center;
     }
@@ -173,9 +285,10 @@ nav {
  
 }
 #price_btn1 {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
+    background-color: var(--price-btn-color);
     border: none;
-    color: white;
+    color: white; /* Color inside the price btn*/
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -183,13 +296,14 @@ nav {
     font-size: 16px;
     border-radius: 1em;
     cursor: pointer;
-    box-shadow: 0px 0px 5px green;
+    box-shadow: 0px 0px 5px var(--price-btn-shadow-color);
     margin-top: 4em;
 }
 #price_btn2 {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
+    background-color: var(--price-btn-color);
     border: none;
-    color: white;
+    color: white;   /* Color inside the price btn*/
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -197,13 +311,14 @@ nav {
     font-size: 16px;
     border-radius: 1em;
     cursor: pointer;
-    box-shadow: 0px 0px 5px green;
+    box-shadow: 0px 0px 5px var(--price-btn-shadow-color);
     margin-top: 4em;
 }
 #price_btn3 {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
+    background-color: var(--price-btn-color);
     border: none;
-    color: white;
+    color: white;   /* Color inside the price btn*/
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -211,16 +326,23 @@ nav {
     font-size: 16px;
     border-radius: 1em;
     cursor: pointer;
-    box-shadow: 0px 0px 5px green;
+    box-shadow: 0px 0px 5px var(--price-btn-shadow-color);
     margin-top: 4em;
 }
 .package_ul{
     list-style-type: none; 
 }
 /*Gör skuggan runt knappen i price divsen*/
-.price_btn:hover {
+#price_btn1:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+#price_btn2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#price_btn3:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .package_ul > li{
     padding: 4px 10px;
 }
@@ -235,13 +357,14 @@ nav {
     width: 100%; 
     height: 100%; 
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* background-color: #00000066; Black w/ opacity */
+    background-color: var(--modal-popup-window-bgColor-behind-popup);
 }
 
 /* popup Content */
 .popup1-content {
-    background-color: #d8d8d8;
+    /* background-color: #d8d8d8; */
+    background-color: var(--modal-popup-bg-color);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -255,21 +378,18 @@ nav {
     font-size: 28px;
     font-weight: bold; 
 }
-
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
 .close2 {
     color: red;
     float: right;
     font-size: 28px;
     font-weight: bold; 
 }
-
 .close2:hover,
 .close2:focus {
     color: #000;
@@ -282,7 +402,6 @@ nav {
     font-size: 28px;
     font-weight: bold; 
 }
-
 .close3:hover,
 .close3:focus {
     color: #000;
@@ -290,12 +409,10 @@ nav {
     cursor: pointer;
 }
 
-
         /* OmOss.php*/
-
 #OmOss_div{
-    border: 1px solid red;
     margin: 1%;
+    /* color: var(--omOss-page-txt-color); */
 }
 .OmOss, p a{
     color:inherit;
@@ -307,13 +424,15 @@ nav {
 }
 #medlem_top{
     text-align: center;
-    color: black;
+    /* color: #000000; */
+    color: var(--omOss-memb-rubrik-color);
 }
 .member {
     display: inline;
 }
 .name_descr {
     display: inline;
+    color:var(--omOss-memb-desc-color);
 }
 .member img {
     width: 80%;
@@ -323,8 +442,10 @@ nav {
 
         /*templates/footer.php*/
 footer {
-    background: #393936;
-    color: #d3d3d3;
+    /* background: #393936; */
+    background-color: var(--main-nav-bg-color);
+    /* color: #d3d3d3; */
+    color: var(--footer-info-txt-color);
     height: 420px;
     position: relative;
 }
@@ -340,7 +461,8 @@ footer .footer-content .footer-section{
     padding: 25px;
 }
 .footer .footer-content, h3{
-    color: #dedddd;
+    /* color: #dedddd; */
+    color: var(--footer-h3-color);
 }
 .footer .footer-content .about .contact, p{
     display: block;
@@ -357,7 +479,8 @@ footer .footer-content .footer-section{
     display: inline-block;
     font-size: 1.3em;
     border-radius: 5px;
-    color: white;
+    /* color: #ffffff; */
+    color:var(--footer-fab-color);
     transition: all .4s;
 }
 .fab:hover{
@@ -370,17 +493,20 @@ footer .footer-content .footer-section{
     margin-bottom: 10px;
     font-size: 1.2em;
     transition: all .4s;
-    color: white;
+    color: var(--footer-link-txt-color);
 }
 .footer_links:hover{
-    color: grey;
+    /* color: #808080; */
+    color: var(--main-link-hover-color);
     margin-left: 15px;
     transition: all .4s;
 }
 /* Styr utsendet på footer/contact form */
 .contact-form .text-input, .contact-input{
-    background: #272727;
-    color: #bebdbd;
+    /* background: #272727; */
+    background-color: var(--footer-contact-input-bg-color);
+    /* color: #bebdbd; */
+    color:var(--footer-contact-input-color);
     margin-bottom: 10px;
     line-height: 1.5rem;
     padding: .9rem 1.4rem;
