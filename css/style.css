@@ -22,7 +22,6 @@
     --modal-popup-window-bgColor-behind-popup:#00000066; 
     --modal-popup-bg-color:#;
 }
-
 :root /* [data-thema="dark"] */ {  /*Dark theme colors if we make color switch*/
     --main-bg-color: #676765;             /* main bg-color on the pages */
     --main-nav-bg-color: #393936;         /* bg-color on the nav/meny */
@@ -271,8 +270,6 @@ nav {
     border-radius: 1em;
 }
 
-
-
 /*Gör så att containerna blir under varandra i mitten för mobiler*/
 @media only screen and (max-width: 860px) {
     .price_div    {
@@ -282,7 +279,8 @@ nav {
     }
 }
 .package_name{
- 
+    text-decoration: underline;
+    font-size: 4vh;
 }
 #price_btn1 {
     /* background-color: #4CAF50; */
