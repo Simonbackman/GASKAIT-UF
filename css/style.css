@@ -103,7 +103,6 @@ article{
     min-height: 100%;
     height: auto;
      /* background-color: #d9d9d9; */
-
     /* background-color: #676765; *//* Same color without using css var*/
     background-color: var(--main-bg-color);
     display: flex;
@@ -115,6 +114,12 @@ nav {
     min-height: 8vh;
     /* background-color: #393936; */ /* Same color without using css var*/
     background-color: var(--main-nav-bg-color);
+    
+    /* Makes the nav-bar follow you down */
+    /* position: fixed;
+    width: 100%;
+    z-index: 10; */
+    
 }
 
 .nav-logo{
@@ -134,10 +139,12 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 35%;
+    z-index: 5;
     
 }
 .nav-links li {
     list-style: none;
+    
 }
 
 .nav-links a {
@@ -190,7 +197,7 @@ nav {
         transition: transform 0.5s ease-in;
     }
     .nav-links li {
-        opacity: 1;
+        opacity: 0;
     }
     .burger {
         display: block;
@@ -201,7 +208,6 @@ nav {
     transform: translateX(0%);
 }
 
-/*  Don't work right now trying to fix | (ska göra så att texten glider in istället för redan finnas där nav texten för mobiler)  */
 @keyframes navLinkFade{
     from {
         opacity: 0;
@@ -222,6 +228,45 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/* Home page  */
+
+
+
+
+.container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  .container .other-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    padding: 30px;
+    font-size: 50px;
+    color: white;
+  }
+  .container .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+  }
+  .container .slide.show {
+    opacity: 1;
+  }
+
 
         /*Priser.php*/
 .main { 
