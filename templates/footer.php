@@ -3,9 +3,14 @@
             <div class="footer-section about">
                 <h3 class="log-text">GASKAIT-UF</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis sed, praesentium itaqu
-                    e. Recusandae maiores deleniti, eligendi optio delectus inventore illo.
+                    Vi är tre gymnasieelever från NTI Gymnasiet kronhus vi går IT linjen med 
+                    inriktningarna Webbutveckling och Nätverk.
+                    Vi har fått i uppdrag att skapa ett UF-företag inom IT, så vi har skapat 
+                    detta företag som specialiserar sig i både skapande av hemsidor och support. 
+                    <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis sed, praesentium itaqu
+                    e. Recusandae maiores deleniti, eligendi optio delectus inventore illo. -->
                 </p>
+                <br/>
                 <div class="contact">
                     <p><i class="fas fa-phone"></i> &nbsp; 2134213</p>
                     <p><i class="fas fa-envelope"></i> &nbsp; @mail</p>
@@ -15,13 +20,13 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div><br/>
-            <div class="onoffswitch">
-                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                <label class="onoffswitch-label" for="myonoffswitch">
-                    <span class="onoffswitch-inner"></span>
-                    <span class="onoffswitch-switch"></span>
-                </label>
-            </div>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                 <input type="checkbox" id="checkbox" />
+                 <div class="slider round"></div>
+               </label>
+                 <em>Enable Dark Mode!</em>
+               </div>
             </div>
             <div class="footer-section links">
                 <h3>Links</h3>
@@ -56,10 +61,12 @@
                 </form>
             </div>
         </div>
+        
 
 
         <div class="footer-bottom">
             &copy; gaskait-uf.com
+            
         </div>
 
     </footer>

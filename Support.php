@@ -18,5 +18,6 @@
        
    </article>
     <?php include('templates/footer.php'); ?>
+    <script src="javascript/theme.js"></script>
 </body>
 </html>

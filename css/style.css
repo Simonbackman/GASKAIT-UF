@@ -2,34 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: cursive; */
+    
 }
 
 :root[data-theme='light']{
-    --main-bg-color: #ebebeb;             /* main bg-color on the pages */
-    --main-nav-bg-color: #e0dada;         /* bg-color on the nav/meny */
-    --main-nav-burger-color: #333333;     /* burger color in the nav/meny (for phones) */
-    --main-nav-link-color:#333333;
-
-
-    --footer-info-txt-color:#;
-    --footer-h3-color: #;
-    --footer-link-txt-color: #;
-    --footer-fab-color:#000000;
-
-    --price-box-div-bg-color: #;    /* bg color on the price divs popups */
-    --price-btn-color: #;           /* color on the price buttons */
-    --price-btn-shadow-color:#;     /* shadow colors for the price buttons  */
-    --modal-popup-window-bgColor-behind-popup:#00000066; 
-    --modal-popup-bg-color:#;
-}
-:root /* [data-thema="dark"] */ {  /*Dark theme colors if we make color switch*/
-    --main-bg-color: #676765;             /* main bg-color on the pages */
-    --main-nav-bg-color: #393936;         /* bg-color on the nav/meny */
-    --main-nav-burger-color: #e2e2e2;     /* burger color in the nav/meny (for phones) */
-    --main-nav-link-color:#E2FFFF;
-    
+    --main-bg-color: #eff1f3;             /* main bg-color on the pages */
+    --main-nav-bg-color: #2e4460;         /* bg-color on the nav/meny */
+    --meny-nav-link-color:#f9f7e5;
+    --gaskait-logo-txt-color:#0086c9;
+    --footer-bottom-bg-color:#343a40;
     --main-link-hover-color:#808080;
 
+    
+    --text-area-bg-color:#e0e0e0;
+    --omOss-memb-desc-color:#000000;
+
+    
+    --footer-fab-color:#000000;
+    --modal-popup-window-bgColor-behind-popup:#00000066; 
+
+}
+:root /* [data-thema="dark"] */ {  /*Dark theme colors if we make color switch*/
+    --main-bg-color: #2b2b2b;            
+     --main-nav-bg-color: #393936;  
+     --meny-nav-link-color:#f9f7e5;
+     --omOss-memb-desc-color:#e1e1ff;
+     --text-area-bg-color:#3c3f41;
+     --gaskait-logo-txt-color:#0086c9; 
+     --footer-bottom-bg-color:#343a40;
+        
+   
+    
+    --main-link-hover-color:#808080;
+/*
     --footer-info-txt-color:#d3d3d3;
     --footer-h3-color: #dedddd;
     --footer-link-txt-color: #ffffff;
@@ -38,66 +44,79 @@
     --footer-contact-input-bg-color:#272727;
     --footer-contact-input-color:#bebdbd;
     
-    --price-box-div-bg-color: #d4d4d4;    /* bg color on the price divs popups */
-    --price-btn-color: #4CAF50;           /* color on the price buttons */
-    --price-btn-shadow-color:#008000;     /* shadow colors for the price buttons  */
+    --price-box-div-bg-color: #d4d4d4;    
+    --price-btn-color: #4CAF50;           
+    --price-btn-shadow-color:#008000;     
     --modal-popup-window-bgColor-behind-popup:#00000066; 
     --modal-popup-bg-color:#d8d8d8;
     
     --omOss-page-txt-color:#ffffff;
     --omOss-memb-rubrik-color:#f1f0f0;
     --omOss-memb-desc-color:#e7e7e7;
-    
+     */
 }                                          
 html, body{
     height: 100%;
 }
-/* Light/Dark mode switch button  */
-.onoffswitch {
-    position: relative; width: 90px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitch-checkbox {
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
     display: none;
-}
-.onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #999999; border-radius: 20px;
-}
-.onoffswitch-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-    content: "Light";
-    padding-left: 10px;
-    background-color: #34A7C1; color: #FFFFFF;
-}
-.onoffswitch-inner:after {
-    content: "Dark";
-    padding-right: 10px;
-    background-color: #EEEEEE; color: #999999;
-    text-align: right;
-}
-.onoffswitch-switch {
-    display: block; width: 18px; margin: 6px;
-    background: #FFFFFF;
-    position: absolute; top: 0; bottom: 0;
-    right: 56px;
-    border: 2px solid #999999; border-radius: 20px;
-    transition: all 0.3s ease-in 0s; 
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
-}
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    /* background-color: #66bb6a; */
+    background-color: #000000;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 article{
     min-height: 100%;
@@ -106,6 +125,8 @@ article{
     /* background-color: #676765; *//* Same color without using css var*/
     background-color: var(--main-bg-color);
     display: flex;
+    color: var(--omOss-memb-desc-color);
+    background-color:var( --text-area-bg-color);
 }
 nav {
     display: flex;
@@ -114,11 +135,11 @@ nav {
     min-height: 8vh;
     /* background-color: #393936; */ /* Same color without using css var*/
     background-color: var(--main-nav-bg-color);
-    
-    /* Makes the nav-bar follow you down */
+    /* Makes the nav-bar follow you down (Don't wor) */
     /* position: fixed;
     width: 100%;
     z-index: 10; */
+   
     
 }
 
@@ -142,6 +163,26 @@ nav {
     z-index: 5;
     
 }
+
+
+.nav-item{
+    display: block;
+    padding: 2.9rem 1.5rem;
+    will-change: color;
+    transition: color .25s ease-out;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    /* display: block; */
+    /* padding: 2rem 1rem; */
+}
+.nav-item:hover{
+    border-bottom: 2px solid white;
+    /* margin-bottom: -1px; */
+    /* padding-bottom: 3rem; */
+    /* transition: all .4s; */
+
+}
+
 .nav-links li {
     list-style: none;
     
@@ -149,7 +190,8 @@ nav {
 
 .nav-links a {
     /* color:#E2FFFF; */
-    color:var(--main-nav-link-color);
+    
+    color: var(--meny-nav-link-color);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -167,18 +209,19 @@ nav {
     width: 25px;
     height: 3px;
     /* background-color: #e2e2e2; */
-    background-color: var(--main-nav-burger-color);
+    background-color: var(--meny-nav-link-color);
+    
     margin: 5px;
     transition: all 0.3s ease;
 }
     /* Tablet for size of nav-links  */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1270px) {
     .nav-links {
         width: 50%;
     }
 }
     /* Mobile for nav links/burger */
-@media screen and (max-width:768px) {
+@media screen and (max-width:906px) {
     body {
         overflow-x: hidden;
     }
@@ -229,12 +272,28 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* Makes The nav-bar follow as you scroll down  */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20 !important;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
 /* Home page  */
+.slide{
+    filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
 
 .main_page_txt_div{
     margin: 1%;
     line-height: 1.5rem;
-    border: 1px solid red;
+    background-color:var( --text-area-bg-color);
 }
 
 
@@ -242,6 +301,7 @@ nav {
     width: 100%;
     height: 500px;
     position: relative;
+    
   }
   .container .other-content {
     position: absolute;
@@ -459,7 +519,8 @@ nav {
         /* OmOss.php*/
 #OmOss_div{
     margin: 1%;
-    /* color: var(--omOss-page-txt-color); */
+    background-color:var( --text-area-bg-color);
+    
 }
 .OmOss, p a{
     color:inherit;
@@ -468,11 +529,12 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: var(--text-area-bg-color);
 }
 #medlem_top{
     text-align: center;
     /* color: #000000; */
-    color: var(--omOss-memb-rubrik-color);
+    color: var(--omOss-memb-desc-color);
 }
 .member {
     display: inline;
@@ -492,12 +554,15 @@ footer {
     /* background: #393936; */
     background-color: var(--main-nav-bg-color);
     /* color: #d3d3d3; */
-    color: var(--footer-info-txt-color);
+    color: var(--meny-nav-link-color);
     height: 420px;
     position: relative;
 }
 footer h3{
     font-size: 2.5em;
+}
+.log-text{
+    color:var(--gaskait-logo-txt-color);
 }
 footer .footer-content{   
     height: 350px;
@@ -506,6 +571,7 @@ footer .footer-content{
 footer .footer-content .footer-section{
     flex: 1;
     padding: 25px;
+    
 }
 .footer .footer-content, h3{
     /* color: #dedddd; */
@@ -527,7 +593,8 @@ footer .footer-content .footer-section{
     font-size: 1.3em;
     border-radius: 5px;
     /* color: #ffffff; */
-    color:var(--footer-fab-color);
+    /* color:var(--footer-fab-color); */
+    color:var(--meny-nav-link-color);
     transition: all .4s;
 }
 .fab:hover{
@@ -579,17 +646,18 @@ footer .footer-content .footer-section{
     background: #005255;
 }
 footer .footer-bottom{
-    background: #343a40;
-    color: #686868;
+    /* background: #343a40; */
+    background: var(--footer-bottom-bg-color);
     height: 50px;
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 0px;
+    bottom: -25px; /*Make so the contact btn is not hidden in the footer*/
     left: 0px;
     padding-top: 20px;
-    color: #eae8e8;
+    color:var(--meny-nav-link-color);
 }
+
 /*Styr utsendet i footer i mobil läge */
 @media only screen and (max-width: 934px){
     footer {

@@ -1,21 +1,21 @@
-<nav>
+<nav id="myHeader" >
     <div class="logo">
         <!--            <h4>GASKAIT-UF</h4>-->
         <img class="nav-logo" src="image/gaskalogo.png" alt="logo">
     </div>
     <ul class="nav-links">
-        <li><a href="index.php">
-                <div class="nav-item"><i class="fas fa-home"></i> Home</div>
+        <li><a  href="index.php">
+                <div class="nav-item"><i class="fas fa-home"></i>Home</div>
             </a>
         </li>
-        <li><a href="priser.php">
-                <div class="nav-item">Priser</div>
+        <li><a  href="priser.php">
+                <div class="nav-item"><i class="fas fa-tags"></i>Priser</div>
             </a></li>
-        <li><a href="support.php">
-                <div class="nav-item">Support</div>
+        <li><a  href="support.php">
+                <div class="nav-item"><i class="fas fa-ticket-alt"></i>Support</div>
             </a></li>
-        <li><a href="OmOss.php">
-                <div class="nav-item">OmOss</div>
+        <li><a  href="OmOss.php">
+                <div class="nav-item"><i class="fas fa-info-circle"></i>OmOss</div>
             </a></li>
     </ul>
     <div class="burger">

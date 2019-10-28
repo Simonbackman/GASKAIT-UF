@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -46,6 +46,6 @@
    </article>
    
    <?php include('templates/footer.php'); ?>
-    
+    <script src="javascript/theme.js"></script>
 </body>
 </html>
