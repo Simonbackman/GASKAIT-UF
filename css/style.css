@@ -560,6 +560,8 @@ footer {
 }
 footer h3{
     font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
 }
 .log-text{
     color:var(--gaskait-logo-txt-color);

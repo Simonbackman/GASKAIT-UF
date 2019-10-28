@@ -43,7 +43,6 @@
     <!-- jquery for the img slider -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script>
-
     function cycleBackgrounds() {
     	var index = 0;
     	$imageEls = $('.container .slide'); // Get the images to be cycled.
