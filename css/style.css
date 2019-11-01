@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: arial;
     /* font-family: cursive; */
-    
 }
 
 :root[data-theme='light']{
@@ -58,7 +58,6 @@
 html, body{
     height: 100%;
 }
-
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -555,9 +554,11 @@ footer {
     background-color: var(--main-nav-bg-color);
     /* color: #d3d3d3; */
     color: var(--meny-nav-link-color);
-    height: 420px;
+    /* height: 420px; */
+    height: 56vh;
     position: relative;
 }
+
 footer h3{
     font-size: 2.5em;
     text-align: center;
@@ -656,7 +657,7 @@ footer .footer-bottom{
     position: absolute;
     bottom: -25px; /*Make so the contact btn is not hidden in the footer*/
     left: 0px;
-    padding-top: 20px;
+    padding-top: 15px;
     color:var(--meny-nav-link-color);
 }
 

@@ -1,9 +1,9 @@
 <footer>
         <div class="footer-content">
             <div class="footer-section about">
-                <h3 class="log-text">GASKAIT-UF</h3>
+                <h3 class="log-text">GASKA-IT UF</h3>
                 <p>
-                    Vi är tre gymnasieelever från NTI Gymnasiet kronhus vi går IT linjen med 
+                    Vi är tre elever från NTI Gymnasiet kronhus vi går IT linjen med 
                     inriktningarna Webbutveckling och Nätverk.
                     Vi har fått i uppdrag att skapa ett UF-företag inom IT, så vi har skapat 
                     detta företag som specialiserar sig i både skapande av hemsidor och support. 
@@ -29,7 +29,7 @@
                </div>
             </div>
             <div class="footer-section links">
-                <h3>Links</h3>
+                <h3 style="color:#3bb54a;">Links</h3>
                 <br/>
                 <ul>
                     <a class="footer_links" href="#">
@@ -51,7 +51,7 @@
             </div>
 
             <div class="footer-section contact-form">
-                <h3>Contact us</h3>
+                <h3 style="color:#8cc640">Contact us</h3>
                 <br/>
                 <form action="index.php" method="POST">
                     <input type="name" name="name" class="text-input" placeholder="Your name..."><br/>
@@ -61,12 +61,7 @@
                 </form>
             </div>
         </div>
-        
-
-
         <div class="footer-bottom">
-            &copy; gaskait-uf.com
-            
+            &copy; gaskait-uf.com  
         </div>
-
-    </footer>
+</footer>
