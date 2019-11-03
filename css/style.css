@@ -534,13 +534,16 @@ nav {
     text-align: center;
     /* color: #000000; */
     color: var(--omOss-memb-desc-color);
+    
 }
 .member {
     display: inline;
+    
 }
 .name_descr {
     display: inline;
     color:var(--omOss-memb-desc-color);
+    
 }
 .member img {
     width: 80%;
