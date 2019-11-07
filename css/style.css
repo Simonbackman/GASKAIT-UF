@@ -9,24 +9,20 @@
 :root[data-theme='light']{
     --main-bg-color: #eff1f3;             /* main bg-color on the pages */
     --main-nav-bg-color: #2e4460;         /* bg-color on the nav/meny */
-    --meny-nav-link-color:#f9f7e5;
+    --meny-nav-link-color:#ffffff;
     --gaskait-logo-txt-color:#0086c9;
     --footer-bottom-bg-color:#343a40;
     --main-link-hover-color:#808080;
 
-    
     --text-area-bg-color:#e0e0e0;
     --omOss-memb-desc-color:#000000;
-
-    
     --footer-fab-color:#000000;
     --modal-popup-window-bgColor-behind-popup:#00000066; 
-
 }
 :root /* [data-thema="dark"] */ {  /*Dark theme colors if we make color switch*/
-    --main-bg-color: #2b2b2b;            
+     --main-bg-color: #2b2b2b;            
      --main-nav-bg-color: #393936;  
-     --meny-nav-link-color:#f9f7e5;
+     --meny-nav-link-color:#ffffff;
      --omOss-memb-desc-color:#e1e1ff;
      --text-area-bg-color:#3c3f41;
      --gaskait-logo-txt-color:#0086c9; 
@@ -54,6 +50,12 @@
     --omOss-memb-rubrik-color:#f1f0f0;
     --omOss-memb-desc-color:#e7e7e7;
      */
+
+     --price-box-div-bg-color: #d4d4d4;    
+    --price-btn-color: #4CAF50;           
+    --price-btn-shadow-color:#008000;     
+    --modal-popup-window-bgColor-behind-popup:#00000066; 
+    --modal-popup-bg-color:#d8d8d8;
 }                                          
 html, body{
     height: 100%;
@@ -270,6 +272,7 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
 
 /* Makes The nav-bar follow as you scroll down  */
 .sticky {
@@ -679,3 +682,73 @@ footer .footer-bottom{
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header */
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Change the width of the three columns to 100%
+  (to stack horizontally on small screens) */
+  @media only screen and (max-width: 800px) {
+    .columns {
+      width: 100%;
+    }
+  }
