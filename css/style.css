@@ -275,7 +275,7 @@ nav {
 
 
 /* Makes The nav-bar follow as you scroll down  */
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -284,7 +284,7 @@ nav {
   
   .sticky + .content {
     padding-top: 102px;
-  }
+  } */
 
 /* Home page  */
 .slide{
