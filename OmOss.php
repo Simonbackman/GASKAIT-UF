@@ -25,7 +25,8 @@
         <div id="members">
           <h3 id="medlem_top">Medlemmar i GASKA IT UF</h3>
             <div class="member">
-                <img src="http://i.imgur.com/zmPeyso.png" class="img-responsive img-thumbnail" alt="" />
+                <!-- <img src="http://i.imgur.com/zmPeyso.png" class="img-responsive img-thumbnail" alt="" /> -->
+                <img src="image/members/gustav.jpg"   alt="">
                 <div class="name_descr">
                     <p>Name: Gustav Aldenbratt<br/>Description: VD, web designer</p>
                 </div>
