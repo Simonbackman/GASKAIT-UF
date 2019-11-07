@@ -21,95 +21,16 @@ const navSlide = () =>{
 navSlide();
 
 
-window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+// window.onscroll = function() {myFunction()};
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// var header = document.getElementById("myHeader");
+// var sticky = header.offsetTop;
 
-
-
-
-
-
-//  modal1
-var popup1 = document.getElementById("popup1");
-
-// Get the button that opens the popup
-var btn = document.getElementById("price_btn1");
-
-// Get the <span> element that closes the popup
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the popup 
-btn.onclick = function() {
-  popup1.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the popup
-span.onclick = function() {
-  popup1.style.display = "none";
-}
-// When the user clicks anywhere outside of the popup, close it
-window.addEventListener("click", function(event){
-    if (event.target == popup1) {
-   popup1.style.display = "none";
-  }
-});
-
-// modal2
-var popup2 = document.getElementById("popup2");
-
-// Get the button that opens the popup
-var btn2 = document.getElementById("price_btn2");
-
-// Get the <span> element that closes the popup
-var span2 = document.getElementsByClassName("close2")[0];
-
-// When the user clicks the button, open the popup 
-btn2.onclick = function() {
-  popup2.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the popup
-span2.onclick = function() {
-  popup2.style.display = "none";
-}
-// When the user clicks anywhere outside of the popup, close it
-
-window.addEventListener("click", function(event){
-    if (event.target == popup2) {
-   popup2.style.display = "none";
-  }
-});
-
-//  modal3
-var popup3 = document.getElementById("popup3");
-
-// Get the button that opens the popup
-var btn3 = document.getElementById("price_btn3");
-
-// Get the <span> element that closes the popup
-var span3 = document.getElementsByClassName("close3")[0];
-
-// When the user clicks the button, open the popup 
-btn3.onclick = function() {
-  popup3.style.display = "block";
-}
-// When the user clicks on <span> (x), close the popup
-span3.onclick = function() {
-  popup3.style.display = "none";
-}
-// When the user clicks anywhere outside of the popup, close it
-window.addEventListener("click", function(event){
-    if (event.target == popup3) {
-   popup3.style.display = "none";
-  }
-});
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }

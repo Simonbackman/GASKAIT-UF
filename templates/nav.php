@@ -5,7 +5,7 @@
     </div>
     <ul class="nav-links">
         <li><a  href="index.php">
-                <div class="nav-item"><i class="fas fa-home"></i>Home</div>
+                <div class="nav-item"><i class="fas fa-home"></i>Startsida</div>
             </a>
         </li>
         <li><a  href="priser.php">
