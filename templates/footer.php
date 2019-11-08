@@ -16,9 +16,9 @@
                     <p><i class="fas fa-envelope"></i> &nbsp; @mail</p>
                 </div>
                 <div class="socials">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/gaskait.uf.7" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/gaskait_uf/?hl=sv" target="_blank" ><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                 </div><br/>
                 <div class="theme-switch-wrapper">
                     <label class="theme-switch" for="checkbox">
