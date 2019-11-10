@@ -27,22 +27,22 @@
         <div id="members">
           <h3 id="medlem_top">Medlemmar i GASKA IT UF</h3>
             <div class="member">
-                <img src="http://i.imgur.com/zmPeyso.png" class="img-responsive img-thumbnail" alt="" />
-                <!-- <img src="image/members/gustav.jpg" class="member_img" alt=""> -->
+                <!-- <img src="http://i.imgur.com/zmPeyso.png" class="img-responsive img-thumbnail" alt="" /> -->
+                <img src="image/members/gustav2.png" class="member_img" alt="">
                 <div class="name_descr">
                     <p>Name: Gustav Aldenbratt<br/>Description: VD, web designer</p>
                 </div>
             </div>
             <div class="member">
-                <img src="http://i.imgur.com/zmPeyso.png" class="img-responsive img-thumbnail" alt="" />
-                <!-- <img src="image/members/simon.jpg" class="member_img" alt=""> -->
+                <!-- <img src="http://i.imgur.com/zmPeyso.png" class="img-responsive img-thumbnail" alt="" /> -->
+                <img src="image/members/simon2.png" class="member_img" alt="">
                 <div class="name_descr">
-                    <p>Name: Simon <br/>Backman<br/>Description: Ekonom, web designer</p>
+                    <p>Name: Simon Backman<br/>Description: Ekonom, web designer</p>
                 </div>
             </div>
             <div class="member">
-                <img src="http://i.imgur.com/zmPeyso.png"  alt="" />
-                <!-- <img src="image/members/kasper.jpg" class="member_img" alt=""> -->
+                <!-- <img src="http://i.imgur.com/zmPeyso.png"  alt="" /> -->
+                <img src="image/members/kasper2.png" class="member_img" alt="">
                 <div class="name_descr">
                     <p>Name: Kasper Arvidsson<br/>Description: Marknadsförare, IT-Support</p>
                 </div>
