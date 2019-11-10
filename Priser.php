@@ -26,11 +26,11 @@
                 <div class="divider"></div>
                 <div class="feature">
                     <img src="image/svg/check-circle.svg">
-                    Feature A
+                    Responsive Design
                 </div>
                 <div class="feature">
                     <img src="image/svg/check-circle.svg">
-                    Feature B
+                    Antal Undersidor 4
                 </div>
                 <div class="feature inactive">
                     <img src="image/svg/x-square.svg">
@@ -110,27 +110,27 @@
                 <div class="divider"></div>
                 <div class="feature">
                     <img src="image/svg/check-circle.svg">
-                    Feature A
+                    Responsive Design
                 </div>
                 <div class="feature">
                     <img src="image/svg/check-circle.svg">
-                    Feature B
+                    Antal Undersidor 12
                 </div>
                 <div class="feature">
                     <img src="image/svg/check-circle.svg">
-                    Feature C
+                    Ikoner
                 </div>
                 <div class="feature">
                     <img src="image/svg/check-circle.svg">
-                    Feature D
+                    kontakt formulär
                 </div>
                 <div class="feature">
                     <img src="image/svg/check-circle.svg">
-                    Feature E
+                    Admin panel
                 </div>
                 <div class="feature">
                     <img src="image/svg/check-circle.svg">
-                    Feature F
+                    mörkt Tema
                 </div>
                 <button id="cta_btn3" >test</button> 
            
