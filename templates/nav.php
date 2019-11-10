@@ -23,5 +23,4 @@
         <div class="line2"></div>
         <div class="line3"></div>
     </div>
-
 </nav>

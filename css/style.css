@@ -66,8 +66,6 @@
      */
 
     --price-box-div-bg-color: #d4d4d4;
-    --price-btn-color: #4CAF50;
-    --price-btn-shadow-color: #008000;
     --modal-popup-window-bgColor-behind-popup: #00000066;
     --modal-popup-bg-color: #d8d8d8;
 }
@@ -248,8 +246,6 @@ nav {
 @media screen and (max-width:1270px) {
     .nav-links {
         width: 50%; 
-        
-        background-color: crimson;
     }
 }
 
@@ -326,19 +322,11 @@ nav {
     padding-top: 102px;
   } */
 
-/* Home page  */
+/* Home page  index.php */
 .slide {
     filter: blur(5px);
     -webkit-filter: blur(5px);
 }
-
-.main_page_txt_div {
-    margin: 1%;
-    line-height: 1.5rem;
-    background-color: var(--text-area-bg-color);
-}
-
-
 .container {
     width: 100%;
     height: 500px;
@@ -375,6 +363,135 @@ nav {
 .container .slide.show {
     opacity: 1;
 }
+
+.main_page_txt_div {
+    margin: 1%;
+    background-color: var(--text-area-bg-color);
+    margin-left: auto;
+    margin-right: auto;
+    width:70em;
+    height: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+#main-page-article{
+    min-height: auto;
+}
+
+.main_page_txt_div > #main_page-txt_info{
+    /* text-align: center; */
+    font-family: 'Raleway';
+    color: var(--omOss-memb-desc-color);
+    font-size: 2.5em;
+    font-weight: normal;
+    /* font-style: italic; */
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+#main-page-article2{
+    min-height: auto;
+    background-color: var(--main-bg-color);
+    display: flex;
+    color: var(--omOss-memb-desc-color);
+    background-color: var(--text-area-bg-color)
+}
+
+.mainCardHome{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    text-align: center;
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    /* background-color: white; */
+    background-color: var(--main-bg-color);
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    background:var(--main-bg-color);
+  }
+  
+  .card_title {
+    /* color: #ffffff; */
+    color: var(--omOss-memb-desc-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .card_text {
+    color: #ffffff;
+    color: var(--omOss-memb-desc-color);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+  .made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+  }
 
 
 /*Priser.php*/
