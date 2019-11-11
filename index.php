@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 </head>
-
 <body>
    <?php include('templates/nav.php')?>
     
    <div class="container">
     	<div class="other-content">Need to find free images/no copyright</div>
-    	<div class="slide show" style="background-image: url('image/codeimg.webp');"></div>
-    	<div class="slide" style="background-image: url('image/code-1076533_960_720.jpg');"></div>
-    	<div class="slide" style="background-image: url('image/code-2434271_960_720.jpg');"></div>
+    	<div class="slide show" style="background-image: url('image/sliderImg/code-1076536_1920.jpg');"></div>
+    	<div class="slide" style="background-image: url('image/sliderImg/code-1839406_960_720.jpg');"></div>
+    	<div class="slide" style="background-image: url('image/sliderImg/website-647013_960_720.jpg');"></div>
     </div>
 
     <article id="main-page-article">
@@ -33,7 +32,7 @@
             <ul class="cards">
                 <li class="cards_item">
                 <div class="card">
-                    <div class="card_image"><img src=""></div>
+                    <div class="card_image"><img src="image/priserImgCard2.png"></div>
                     <div class="card_content">
                     <h2 class="card_title">Priser</h2>
                     <p class="card_text">För mer information om våra priser och våra olika paket och dess innehåll</p>
@@ -43,7 +42,7 @@
                 </li>
                 <li class="cards_item">
                 <div class="card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+                    <div class="card_image"> <img src="image/supportImgCard.jpg"></div>
                     <div class="card_content">
                     <h2 class="card_title">Support</h2>
                     <p class="card_text">För mer information om våran support och vilka tjänster han erbjuder och vilka priser</p>
@@ -53,7 +52,7 @@
                 </li>
                 <li class="cards_item">
                 <div class="card">
-                    <div class="card_image"><img src=".png"></div>
+                    <div class="card_image"><img src="image/infoImgCard.png"></div>
                     <div class="card_content">
                     <h2 class="card_title">Om Oss</h2>
                     <p class="card_text">Mer information om vilka vi är och hur man kan komma i kontakt med oss</p>

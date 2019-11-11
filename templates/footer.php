@@ -62,6 +62,6 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; gaskait-uf.com  
+            &copy; gaskait-uf.se  
         </div>
 </footer>
