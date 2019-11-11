@@ -13,7 +13,7 @@
    <?php include('templates/nav.php')?>
     
    <div class="container">
-    	<div class="other-content">Need to find free images/no copyright</div>
+    	<div class="other-content">..</div>
     	<div class="slide show" style="background-image: url('image/sliderImg/code-1076536_1920.jpg');"></div>
     	<div class="slide" style="background-image: url('image/sliderImg/code-1839406_960_720.jpg');"></div>
     	<div class="slide" style="background-image: url('image/sliderImg/website-647013_960_720.jpg');"></div>
@@ -45,7 +45,7 @@
                     <div class="card_image"> <img src="image/supportImgCard.jpg"></div>
                     <div class="card_content">
                     <h2 class="card_title">Support</h2>
-                    <p class="card_text">För mer information om våran support och vilka tjänster han erbjuder och vilka priser</p>
+                    <p class="card_text">För mer information om våran support och vilka tjänster han erbjuder och till vilka priser</p>
                     <a href="support.php" class="btn card_btn">Mer information</a>
                     </div>
                 </div>
